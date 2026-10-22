@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Routine Optimizer</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <h1>Intelligent Daily Routine Optimizer</h1>
+
+    <div class="container">
+        <div class="section tasks-section">
+            <h2>Daily Tasks</h2>
+            <form id="taskForm">
+                <input type="text" id="task" placeholder="Enter Task" required>
+                <input type="number" id="hours" placeholder="Hours" required>
+                <button type="submit">Add Task</button>
+            </form>
+            <ul id="taskList"></ul>
+        </div>
+
+        <div class="section habits-section">
+            <h2>Habit Tracker</h2>
+            <form id="habitForm">
+                <input type="text" id="habitName" placeholder="Enter Habit" required>
+                <button type="submit">Add Habit</button>
+            </form>
+            <div id="habitList"></div>
+        </div>
+
+        <div class="section analytics-section">
+            <h2>Weekly Analytics</h2>
+            <div id="analytics">
+                <canvas id="analyticsChart"></canvas>
+                <div id="statsContainer"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
